@@ -1,22 +1,23 @@
 
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll('.carousel').forEach(carousel => {
-    const track = carousel.querySelector('.carousel-track');
-    const slides = track.children;
+document.addEventListener("DOMContentLoaded", function() {
+  const carousels = document.querySelectorAll(".carousel");
+  carousels.forEach((carousel) => {
     let index = 0;
+    const images = carousel.querySelectorAll("img");
+    const total = images.length;
 
     function showSlide(i) {
-      track.style.transform = `translateX(-${i * 100}%)`;
+      images.forEach((img, j) => {
+        img.style.display = (i === j) ? "block" : "none";
+      });
     }
 
-    carousel.querySelector('.next').addEventListener('click', () => {
-      index = (index + 1) % slides.length;
+    function nextSlide() {
+      index = (index + 1) % total;
       showSlide(index);
-    });
+    }
 
-    carousel.querySelector('.prev').addEventListener('click', () => {
-      index = (index - 1 + slides.length) % slides.length;
-      showSlide(index);
-    });
+    showSlide(index);
+    setInterval(nextSlide, 3000);
   });
 });
