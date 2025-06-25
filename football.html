@@ -26,25 +26,62 @@
         </nav>
         <button id="darkModeToggle" class="dark-mode-toggle">Toggle Dark Mode</button>
   </header>
-  
-  <main class="content">
-    <h2>Football</h2>
-    <p>Football performance overview, video highlights, and positional strengths.</p>
+   <main class="content">
+    <h2>Basketball</h2>
+    <p>Football performance overview, stats, highlight videos, training clips, and position-specific skills.</p>
+    
+<section style="margin-top: 2rem; text-align: left;">
+  <h3>Recruiting Profile</h3>
+  <ul>
+    <li><strong>Height:</strong> 6'2"</li>
+    <li><strong>Weight:</strong> 180 lbs</li>
+    <li><strong>Position:</strong> Point Guard, Shooting Guard</li>
+    <li><strong>Graduation Year:</strong> 2030</li>
+    <li><strong>GPA:</strong> 3.8 (unweighted)</li>
+    <li><strong>Standardized Tests:</strong> SAT TBD (Projected)</li>
+  </ul>
 
-    <div class="carousel">
-      <button class="prev">←</button>
-      <div class="carousel-track">
-        <div class="carousel-slide"><img src="images/sample1.jpg" alt="Highlight 1" /></div>
-        <div class="carousel-slide"><img src="images/sample2.jpg" alt="Highlight 2" /></div>
-      </div>
-      <button class="next">→</button>
-    </div>
+  <h4>Stats Highlights</h4>
+  <ul>
+    <li>34 RECs</li>
+    <li>580 RecYards</li>
+    <li>3 TDs</li>
+    <li>1 INTs</li>
+    <li>7.2 YPC</li>
+  </ul>
 
-    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Highlight Reel"></iframe>
+  <h4>Coaches & Contacts</h4>
+  <ul>
+    <li><strong>Football Coach:</strong> Coach Adrianna Hahn – <a href="mailto:ahahn@hahnhoops.com">ahahn@hahnhoops.com</a></li>
+    <li><strong>Football Coach:</strong> Coach Jerm – <a href="mailto:jerm@hgetemailaddress">jerm@hgetemailaddress.com</a></li>
+  </ul>
+
+  <h4>Training & Development</h4>
+  <ul>
+    <li>Works with private skills trainers in basketball and soccer off-season</li>
+    <li>Speed & agility focused: 40-yard dash – 5.5s</li>
+    <li>Strength training: Bench max – 75 lbs</li>
+  </ul>
+
+  <h4>Resume Download</h4>
+  <p><a href="docs/jax-athlete-resume.pdf" target="_blank">Click here to download Jax's PDF Football Resume</a></p>
+</section>
+
   </main>
+  
   <footer>
-    <p>&copy; 2025 Jax J. Cooper</p>
-  </footer>
-  <script src="script.js"></script>
+        © 2025 Jax J Cooper. All rights reserved.
+    </footer>
+    <script>
+  const toggle = document.getElementById('darkModeToggle');
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    localStorage.setItem('dark-mode', document.body.classList.contains('dark-mode'));
+  });
+
+  if (localStorage.getItem('dark-mode') === 'true') {
+    document.body.classList.add('dark-mode');
+  }
+</script>
 </body>
 </html>
