@@ -2,34 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Basketball | Jax J Cooper</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
-    <nav>
-      <h1>Jax J Cooper</h1>
-      <ul>
-        <li><a href="index.html">Home</a></li><li><a href="just-jax.html">Just Jax</a></li><li><a href="academics.html">Academics</a></li><li><a href="basketball.html">Basketball</a></li><li><a href="soccer.html">Soccer</a></li><li><a href="football.html">Football</a></li><li><a href="music.html">Music</a></li><li><a href="entrepreneurship.html">Entrepreneurship</a></li><li><a href="community.html">Community Service</a></li><li><a href="contact.html">Contact</a></li><li><a href="blog.html">Blog</a></li>
-      </ul>
-    </nav>
+    <div class="logo">
+            <img src="jax_logo_favicon_32.png" alt="Jax Logo">
+            <span>Jax J Cooper</span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="just-jax.html">Just Jax</a>
+            <a href="basketball.html">Basketball</a>
+            <a href="soccer.html">Soccer</a>
+            <a href="football.html">Football</a>
+            <a href="music.html">Music</a>
+            <a href="academics.html">Academics</a>
+            <a href="entrepreneurship.html">Entrepreneurship</a>
+            <a href="community.html">Community</a>
+        </nav>
+        <button id="darkModeToggle" class="dark-mode-toggle">Toggle Dark Mode</button>
   </header>
-
+<main class="content">
+    <h2>Basketball</h2>
+    <section class="intro">
+        <p>This section highlights Jax’s journey and achievements in basketball.</p>
+    </section>
   <main class="content">
 
-<div class="carousel">
-  <button class="carousel-button carousel-button--left">&#8592;</button>
-  <div class="carousel-track-container">
-    <div class="carousel-track">
-      <div class="carousel-slide"><img src="images/sample1.jpg" alt="Sample 1"></div>
-      <div class="carousel-slide"><img src="images/sample2.jpg" alt="Sample 2"></div>
-      <div class="carousel-slide"><img src="images/sample3.jpg" alt="Sample 3"></div>
-    </div>
-  </div>
-  <button class="carousel-button carousel-button--right">&#8594;</button>
-</div>
+    <section class="carousel-section">
+        <h3>Image Highlights</h3>
+        <div class="carousel">
+            <img src="placeholder1.jpg" alt="Highlight 1" style="width:100%; display:block;">
+            <img src="placeholder2.jpg" alt="Highlight 2" style="width:100%; display:none;">
+            <img src="placeholder3.jpg" alt="Highlight 3" style="width:100%; display:none;">
+        </div>
+    </section>
 
+ <section class="video-section">
 
 <div style="margin-top: 2rem;">
   <h3>Highlight Reel</h3>
@@ -38,7 +51,8 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe>
 </div>
-
+</section>
+    
 <section style="margin-top: 2rem; text-align: left;">
   <h3>Recruiting Profile</h3>
   <ul>
@@ -80,8 +94,18 @@
   </main>
 
   <footer>
-    <p>© 2025 Jax J Cooper</p>
-  </footer>
-<script src="script.js"></script>
+        © 2025 Jax J Cooper. All rights reserved.
+    </footer>
+    <script>
+  const toggle = document.getElementById('darkModeToggle');
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    localStorage.setItem('dark-mode', document.body.classList.contains('dark-mode'));
+  });
+
+  if (localStorage.getItem('dark-mode') === 'true') {
+    document.body.classList.add('dark-mode');
+  }
+</script>
 </body>
 </html>
