@@ -1,67 +1,126 @@
-
-:root {
-  --charcoal: #333432;
-  --black: #1D1D1A;
-  --offwhite: #F7F7F5;
-  --lightblue: #A4A9F5;
-  --electricblue: #334CFF;
-  --neonyellow: #D8FF00;
-  --gold: #C5A46C;
-}
-
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
+  background-color: #F7F7F5;
+  color: #1D1D1A;
   margin: 0;
-  background: var(--offwhite);
-  color: var(--black);
+  padding: 0;
 }
 
-header, footer {
-  background: var(--charcoal);
-  color: var(--offwhite);
+.header {
+  background-color: #333432;
+  color: #F7F7F5;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 12px;
+}
+
+.nav a {
+  color: #F7F7F5;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main.content {
+  padding: 2rem;
+  background-color: #F7F7F5;
+  color: #1D1D1A;
+}
+
+.footer {
+  background-color: #333432;
+  color: #F7F7F5;
   text-align: center;
   padding: 1rem;
 }
 
-nav a {
-  margin: 0 10px;
-  color: var(--electricblue);
-  text-decoration: none;
+h1, h2, h3 {
+  color: #334CFF;
 }
 
-.content {
-  padding: 2rem;
-}
-
-.cta {
-  background-color: var(--neonyellow);
-  color: var(--black);
-  border: none;
-  padding: 10px 20px;
+.cta-button, .dark-mode-toggle {
+  background-color: #D8FF00;
+  color: #1D1D1A;
   font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 1rem;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .carousel {
-  max-width: 100%;
-  overflow: hidden;
   position: relative;
-  margin: 2rem 0;
-}
-
-.carousel-track {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.carousel-slide {
-  min-width: 100%;
-}
-
-iframe {
   width: 100%;
-  max-width: 640px;
-  height: 360px;
-  display: block;
-  margin: 2rem auto;
+  max-width: 600px;
+  margin: 1rem auto;
+  overflow: hidden;
+}
+
+.carousel img {
+  width: 100%;
+  display: none;
+  border-radius: 6px;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #1D1D1A;
+  color: #F7F7F5;
+}
+
+body.dark-mode .header,
+body.dark-mode .footer {
+  background-color: #000;
+}
+
+body.dark-mode .nav a {
+  color: #A4A9F5;
+}
+
+body.dark-mode .cta-button,
+body.dark-mode .dark-mode-toggle {
+  background-color: #334CFF;
+  color: #F7F7F5;
+}
+
+
+/* Full dark mode extensions */
+body.dark-mode main.content {
+  background-color: #1D1D1A;
+  color: #F7F7F5;
+}
+
+body.dark-mode section {
+  background-color: #1D1D1A;
+  color: #F7F7F5;
+}
+
+body.dark-mode .carousel img {
+  border: 2px solid #C5A46C;
+}
+
+body.dark-mode ul li,
+body.dark-mode p {
+  color: #F7F7F5;
+}
+
+body.dark-mode iframe {
+  border: 2px solid #C5A46C;
+  background-color: #000;
+}
+
+body.dark-mode a {
+  color: #A4A9F5;
 }
