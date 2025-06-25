@@ -1,42 +1,78 @@
-https://github.com/TheSabrinaCooper/jax-portfolio# Jax J Cooper – Athlete Portfolio
 
-Welcome to the official portfolio of **Jax J Cooper**, a multi-sport student-athlete showcasing athletic talent, academic achievements, and entrepreneurial drive.
+# Jax J. Cooper | Student-Athlete Portfolio
 
----
-
-### 📌 Purpose
-
-This site provides:
-- Highlight reels and statistics for **basketball**, **football**, and **soccer**
-- Academic and extracurricular accomplishments
-- Community service and leadership projects
-- Contact information for coaches and future opportunities
-- Resume and athlete profile for college recruitment (D1–D3) and grants
+Welcome to the official portfolio of **Jax J. Cooper**, a multi-sport student-athlete, entrepreneur, and scholar.
 
 ---
 
-### 📽 Highlight Reels
-Each sports page features an embedded YouTube reel. More footage will be added regularly.
+### 🔍 About This Site
+
+This website was built to:
+
+- Showcase Jax’s athletic achievements across **basketball, football, and soccer**
+- Highlight his academics, music, entrepreneurship, and community service
+- Support recruiting for NCAA D1–D3 programs
+- Create visibility for **grant and business opportunities**
 
 ---
 
-### 📊 Key Stats
-- **Basketball**: 16.3 PPG, 5.2 RPG, 3.1 APG
-- **Football**: 580 receiving yards, 6 TDs
-- **Soccer**: 21 goals, 11 assists
-- **GPA**: 3.8 | **Graduation Year**: 2030
+### 🌟 Features
+
+- 🎯 Responsive design and dynamic color scheme
+- 🎬 Embedded YouTube highlight reels
+- 🎠 JavaScript-powered image carousels
+- 📄 PDF resume download
+- 📬 Contact form-ready (Formspree or Netlify integration)
+- ✍️ Expandable blog and updates section
+- 🏅 Stats and coach contact info on each sports page
 
 ---
 
-### 🔗 Live Portfolio Site
-https://github.com/TheSabrinaCooper/jax-portfolio#
+### 📁 Pages Included
+
+- `index.html` – Main landing page
+- `just-jax.html` – Hobbies and personality
+- `academics.html` – Academic profile
+- `basketball.html` – Highlights, stats, contacts
+- `football.html` – Position data, video, resume
+- `soccer.html` – Performance info and video
+- `music.html` – Musical talents
+- `entrepreneurship.html` – Business and branding (Royal Legendz)
+- `community.html` – Service and leadership
+- `contact.html` – Contact form setup
+- `blog.html` – Ongoing updates
 
 ---
 
-### 👇 Contact
-For recruiting inquiries or support opportunities, please use the contact form on the site or email:
-**recruiting@jaxjcooper.com**
+### 🚀 Deployment
+
+This site can be hosted on:
+
+- **GitHub Pages**
+- **Netlify** (via drag and drop or Git integration)
+- Embedded or linked from a **Canva Landing Page**
+- Routed from a **Squarespace domain**
 
 ---
 
-*Built with HTML, CSS, and JavaScript. Maintained by Jax and team.*
+### 👑 Branding
+
+Colors and branding match Royal Legendz identity with:
+
+- Charcoal: `#333432`
+- Electric Blue: `#334CFF`
+- Neon Yellow: `#D8FF00`
+- Gold: `#C5A46C`
+- Light Blue: `#A4A9F5`
+
+---
+
+### 👇 Next Steps
+
+1. Replace sample YouTube links with real highlights
+2. Upload real resume to `resume-jax-j-cooper.pdf`
+3. Connect contact form with Formspree or Netlify forms
+
+---
+
+&copy; 2025 Jax J. Cooper
