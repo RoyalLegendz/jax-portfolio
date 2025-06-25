@@ -4,33 +4,78 @@
   <meta charset="UTF-8" />
   <title>Soccer | Jax J Cooper</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
-    <h1>Jax J. Cooper</h1>
-    <nav>
-      <a href="index.html">Index</a><a href="just-jax.html">Just-jax</a><a href="academics.html">Academics</a><a href="basketball.html">Basketball</a><a href="football.html">Football</a><a href="soccer.html">Soccer</a><a href="music.html">Music</a><a href="entrepreneurship.html">Entrepreneurship</a><a href="community.html">Community</a><a href="contact.html">Contact</a><a href="blog.html">Blog</a>
-    </nav>
+    <div class="logo">
+            <img src="jax_logo_favicon_32.png" alt="Jax Logo">
+            <span>Jax J Cooper</span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="just-jax.html">Just Jax</a>
+            <a href="basketball.html">Basketball</a>
+            <a href="soccer.html">Soccer</a>
+            <a href="football.html">Football</a>
+            <a href="music.html">Music</a>
+            <a href="academics.html">Academics</a>
+            <a href="entrepreneurship.html">Entrepreneurship</a>
+            <a href="community.html">Community</a>
+        </nav>
+        <button id="darkModeToggle" class="dark-mode-toggle">Toggle Dark Mode</button>
   </header>
+
   <main class="content">
     <h2>Soccer</h2>
-    <p>Soccer achievements, field awareness, and physical development.</p>
+     <section class="intro">
+         <p>This section highlights Jax’s soccer journey, achievements, field awareness, and physical development.</p>
+      </section>
 
-    <div class="carousel">
-      <button class="prev">←</button>
-      <div class="carousel-track">
-        <div class="carousel-slide"><img src="images/sample1.jpg" alt="Highlight 1" /></div>
-        <div class="carousel-slide"><img src="images/sample2.jpg" alt="Highlight 2" /></div>
-      </div>
-      <button class="next">→</button>
-    </div>
+    <section class="carousel-section">
+        <h3>Image Highlights</h3>
+        <div class="carousel">
+            <img src="placeholder1.jpg" alt="Highlight 1" style="width:100%; display:block;">
+            <img src="placeholder2.jpg" alt="Highlight 2" style="width:100%; display:none;">
+            <img src="placeholder3.jpg" alt="Highlight 3" style="width:100%; display:none;">
+        </div>
+    </section>
 
-    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Highlight Reel"></iframe>
-  </main>
+    <section class="video-section">
+        <h3>Highlight Reel</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" 
+                title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section class="achievements">
+        <h3>Achievements</h3>
+        <ul>
+            <li>List top achievements or awards here.</li>
+            <li>Include links to verifiable stats or news mentions if available.</li>
+        </ul>
+    </section>
+
+    <section class="extras">
+        <h3>Extras</h3>
+        <p>Include endorsement quotes, stat dashboards, or pitch deck links here.</p>
+        
+    </section>
+</main>
+   
   <footer>
-    <p>&copy; 2025 Jax J. Cooper</p>
-  </footer>
-  <script src="script.js"></script>
+        © 2025 Jax J Cooper. All rights reserved.
+    </footer>
+    <script>
+  const toggle = document.getElementById('darkModeToggle');
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    localStorage.setItem('dark-mode', document.body.classList.contains('dark-mode'));
+  });
+
+  if (localStorage.getItem('dark-mode') === 'true') {
+    document.body.classList.add('dark-mode');
+  }
+</script>
 </body>
 </html>
