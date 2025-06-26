@@ -247,3 +247,52 @@ spacer {
   padding: 12px 18px;
   pointer-events: none;
 }
+
+.hero-split {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 60vh;
+  background-color: var(--offwhite);
+  padding: 2rem;
+}
+
+.hero-image {
+  flex: 1 1 33%;
+  padding-right: 1rem;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.hero-text {
+  flex: 2 1 67%;
+  color: var(--black);
+  text-align: left;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: var(--electricblue);
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+}
+
+.cta {
+  background-color: var(--neonyellow);
+  color: var(--black);
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  margin-top: 1rem;
+  border-radius: 4px;
+}
+
